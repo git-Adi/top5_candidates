@@ -38,8 +38,7 @@ HireFive is a modern web application designed to help recruiters and hiring mana
 1. **Clone the repository**
 
    ```bash
-   git clone [your-repository-url]
-   cd hire-five
+   git clone https://github.com/git-Adi/top5_candidates.git
    ```
 
 2. **Install dependencies**
@@ -50,7 +49,7 @@ HireFive is a modern web application designed to help recruiters and hiring mana
    pnpm install
 
    # Install backend dependencies
-   cd ../backend
+   cd backend
    pnpm install
    ```
 
@@ -60,19 +59,19 @@ HireFive is a modern web application designed to help recruiters and hiring mana
 
    ```bash
    cd backend
-   pnpm start
+   npx ts-node src/index.ts
    ```
 
-   The backend will be available at `http://localhost:3000`
+   The backend will be available at `http://localhost:4000`
 
 2. **Start the frontend development server**
 
    ```bash
    cd frontend
-   pnpm dev
+   npm run dev
    ```
 
-   The frontend will be available at `http://localhost:5173`
+   The frontend will be available at `http://localhost:3001`
 
 ## Project Structure
 
@@ -97,7 +96,7 @@ hire-five/
 
 1. **Upload Candidate Data**
 
-   - Click the "Upload CSV" button to upload a CSV file containing candidate information
+   - Click the "Upload" button to upload a json file containing candidate information
    - The CSV should include columns for: id, name, location, years of experience, and skills
 
 2. **Review Candidates**
